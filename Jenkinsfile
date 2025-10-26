@@ -1,12 +1,11 @@
 pipeline {
     agent any
 
-
     stages {
         stage('Checkout') {
             steps {
                 echo 'Cloning GitHub repository...'
-                git branch: 'main', url: 'https://github.com/fischere5-boop/demo.git'
+                git branch: 'master', url: 'https://github.com/fischere5-boop/demo.git'
             }
         }
 
