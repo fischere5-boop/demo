@@ -1,10 +1,6 @@
 pipeline {
     agent any
 
-    tools {
-        // Use Maven from Jenkins or download if not installed
-        maven 'Maven 3'
-    }
 
     stages {
         stage('Checkout') {
