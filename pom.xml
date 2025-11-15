@@ -70,5 +70,11 @@
 			</releases>
 		</pluginRepository>
 	</pluginRepositories>
+	<distributionManagement>
+	  <repository>
+	    <id>hw6</id>
+	    <url>http://localhost:8081/repository/hw6/</url>
+	  </repository>
+	</distributionManagement>
 
 </project>
