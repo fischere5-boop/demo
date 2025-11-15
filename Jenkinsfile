@@ -6,7 +6,7 @@ pipeline {
     }
 
     environment {
-        NEXUS_URL = "http://localhost:8081"
+        NEXUS_URL = "http://nexus:8081"
         NEXUS_REPO = "hw6"
         NEXUS_CREDENTIALS = "nexus-credentials"
     }
