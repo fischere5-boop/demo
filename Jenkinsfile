@@ -42,16 +42,16 @@ pipeline {
                     ]) {
 
                         sh """
-                        mvn deploy:deploy-file \
-                          -Dfile=${jarFile} \
-                          -DrepositoryId=${hw6} \
-                          -Durl=${http://localhost:8081/repository/hw6/}/repository/${hw6}/ \
-                          -DgroupId=com.example.demo \
-                          -DartifactId=demo \
-                          -Dversion=1.0.0 \
-                          -Dpackaging=jar \
-                          -DgeneratePom=true \
-                          -Dusername=$admin \
+                        mvn deploy:deploy-file 
+                          -Dfile=${jarFile} 
+                          -DrepositoryId=${hw6} 
+                          -Durl=${http://localhost:8081/repository/hw6/}/repository/${hw6}/ 
+                          -DgroupId=com.example.demo 
+                          -DartifactId=demo 
+                          -Dversion=1.0.0 
+                          -Dpackaging=jar 
+                          -DgeneratePom=true 
+                          -Dusername=$admin 
                           -Dpassword=$1234qwer
                         """
                     }
